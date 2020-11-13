@@ -4,6 +4,47 @@
   
     
     <entry>
+      <title>群晖nas下docker安装百度网盘不限速下载工具</title>
+      <link href="naspanbaidu/"/>
+      <url>naspanbaidu/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907080924463.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907080924463.png" srcset="data:image/png;base64,666" alt=""><br>  黑群晖安装了docker套件以后，安装一个docker-baiduupcs，就可以实现群晖nas远程高速下载。不用会员也可以跑满宽带不限速。美滋滋~文章最后一章还有通过VPN方式远程访问局域网里的ikuai、lede、nas的方法无需端口映射！！</p><a id="more"></a><div class="btns center">            <a class="button" href='/ruanluyou/' title='《软路由pve虚拟机安装ikuai+lede+黑群晖DSM》'><img src='https://static.lee1224.com/avatar.png'>《软路由pve虚拟机安装ikuai+lede+黑群晖DSM》</a>          </div><p><strong>这篇文章内容均为视频教程的解说版比较简洁，如果看不明白请看移步查看详细视频教程。</strong></p><div class="tabs" id="tab-videotutorial"><ul class="nav-tabs"><li class="tab active"><a class="#tab-videotutorial-1">bilibili</a></li><li class="tab"><a class="#tab-videotutorial-2">youtube</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-videotutorial-1"><p><strong><a href="https://space.bilibili.com/452398672/channel/detail?cid=83951">点击查看详细视频教程欢迎大家订阅我的频道(bilibili)</a></strong></p></div><div class="tab-pane" id="tab-videotutorial-2"><p><strong><a href="https://www.youtube.com/playlist?list=PLFyCLARSVkkqwqcGDf_5mkOAfKe6QU2Ze">点击查看详细视频教程欢迎大家订阅我的频道(youtube)</a></strong></p></div></div></div><h1 id="群晖nas下docker安装百度网盘不限速下载工具">群晖nas下docker安装百度网盘不限速下载工具</h1><h2 id="1-首先安装docker套件">1.首先安装docker套件</h2><ul><li>直接在套件中心搜索docker安装就ok。</li></ul><h2 id="2-下载并设置docker-baiduupcs">2.下载并设置docker-baiduupcs</h2><ul><li>在docker界面点到注册表搜索<strong>auska</strong></li><li>右击下载对应映像<img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907081633587.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907081633587.png" srcset="data:image/png;base64,666" alt=""></li><li>下载好以后启动映像，点选高级设置<img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907081817566.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907081817566.png" srcset="data:image/png;base64,666" alt=""></li><li>在共享文件夹内新增一个文件夹用来储存从百度网盘上下载的文件。我这设置的是一个名为panbaidu的文件夹。</li><li>添加文件加设置装载路径。<img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907082335886.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907082335886.png" srcset="data:image/png;base64,666" alt=""></li><li>设置端口方便做映射。<img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907082436401.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907082436401.png" srcset="data:image/png;base64,666" alt=""></li><li>启动，浏览器输入群晖ip+本地端口。网页登录百度网盘。</li><li>点击容器详情，在终端机新增一个bash窗口。把根目录下的panbaidu文件夹权限修改为所有用户可读可写<strong>chmod 777 panbaidu/</strong><img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907082912318.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907082912318.png" srcset="data:image/png;base64,666" alt=""></li><li>修改下载目录，吧下载目录修改成之前挂载的目录。<img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907082954318.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907082954318.png" srcset="data:image/png;base64,666" alt=""></li><li>done！</li></ul><h2 id="3-设置端口映射实现远程访问">3.设置端口映射实现远程访问</h2><p><strong>这个部分只讲思路，方法不唯一，详情看视频操作。</strong></p><ul><li>首先需要一个动态域名，让域名解析到本地ip。ikuai或者lede或者群晖docker里安装解析域名的容器都可以实现这个功能。</li><li>然后在路由器，中设置端口映射，把对应的群晖的局域网ip的某个端口暴露给外网。这样就可以实现外网访问。</li><li>动态域名的作用是为了让你可以在ip变动的情况下，可以通过固定的域名来访问。</li></ul><h2 id="4-不用端口映射远程访问的方法。">4.不用端口映射远程访问的方法。</h2><ul><li>首先在ikuai的认证计费中的本地认证服务开启PPTP服务端，开启就行啥都不用改。<img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907084106853.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907084106853.png" srcset="data:image/png;base64,666" alt=""></li><li>然后再到认证账号管理中添加用户<img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907084249465.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907084249465.png" srcset="data:image/png;base64,666" alt=""></li><li>然后在别的设备上使用vpn连接到该网络，然后就可以通过局域网ip来远程访问了。以手机为例：<img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907084518179.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907084518179.png" srcset="data:image/png;base64,666" alt=""><img src="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907084619191.png" class="lazyload" data-srcset="https://img.lee1224.com/%E7%BE%A4%E6%99%96nas%E4%B8%8Bdocker%E5%AE%89%E8%A3%85%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8D%E9%99%90%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/20190907084619191.png" srcset="data:image/png;base64,666" alt=""></li><li>然后连接。</li><li>又done！</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 搞机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> nas </tag>
+            
+            <tag> DSM </tag>
+            
+            <tag> 黑群晖 </tag>
+            
+            <tag> 百度网盘不限速下载 </tag>
+            
+            <tag> BaiduPCS-Go </tag>
+            
+            <tag> nas远程高速下载 </tag>
+            
+            <tag> 端口映射 </tag>
+            
+            <tag> 远程访问局域网设备 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>word长文档格式化排版</title>
       <link href="wordpb/"/>
       <url>wordpb/</url>
