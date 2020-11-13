@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Disallow: /404.html
+Sitemap: https://www.lee1224.com/sitemap.xml
+Sitemap: https://www.lee1224.com/baidusitemap.xml
