@@ -44,14 +44,14 @@
   </url>
   
   <url>
-    <loc>https://www.lee1224.com/tags/index.html</loc>
+    <loc>https://www.lee1224.com/friends/index.html</loc>
     
     <lastmod>2020-11-13</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.lee1224.com/friends/index.html</loc>
+    <loc>https://www.lee1224.com/tags/index.html</loc>
     
     <lastmod>2020-11-13</lastmod>
     
@@ -79,41 +79,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://www.lee1224.com/tags/hexo/</loc>
-    <lastmod>2020-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.lee1224.com/tags/lilpum/</loc>
-    <lastmod>2020-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.lee1224.com/tags/Nginx/</loc>
-    <lastmod>2020-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.lee1224.com/tags/%E4%B8%80%E5%8F%AA%E8%80%81%E8%8F%9C%E9%B8%A1/</loc>
-    <lastmod>2020-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.lee1224.com/tags/Linux/</loc>
-    <lastmod>2020-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
   <url>
     <loc>https://www.lee1224.com/tags/Trojan-Qt5-Windows/</loc>
@@ -173,6 +138,41 @@
   
   <url>
     <loc>https://www.lee1224.com/tags/Trojan-IOS%E5%AE%A2%E6%88%B7%E7%AB%AF/</loc>
+    <lastmod>2020-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.lee1224.com/tags/hexo/</loc>
+    <lastmod>2020-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.lee1224.com/tags/lilpum/</loc>
+    <lastmod>2020-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.lee1224.com/tags/Nginx/</loc>
+    <lastmod>2020-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.lee1224.com/tags/%E4%B8%80%E5%8F%AA%E8%80%81%E8%8F%9C%E9%B8%A1/</loc>
+    <lastmod>2020-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.lee1224.com/tags/Linux/</loc>
     <lastmod>2020-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -300,14 +300,14 @@
 
   
   <url>
-    <loc>https://www.lee1224.com/categories/hexo/</loc>
+    <loc>https://www.lee1224.com/categories/Trojan/</loc>
     <lastmod>2020-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.lee1224.com/categories/Trojan/</loc>
+    <loc>https://www.lee1224.com/categories/hexo/</loc>
     <lastmod>2020-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
